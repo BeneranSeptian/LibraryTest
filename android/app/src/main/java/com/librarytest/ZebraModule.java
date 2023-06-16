@@ -31,6 +31,7 @@ public class ZebraModule extends ReactContextBaseJavaModule {
             if (results.statusCode != EMDKResults.STATUS_CODE.SUCCESS) {
                 return;
             }
+            Toast.makeText(getReactApplicationContext(), "Ini Zebra device, bisa di nyalain scannya", Toast.LENGTH_SHORT).show();
         }else {
             Toast.makeText(getReactApplicationContext(),"Bukan Device Zebra cuk!", Toast.LENGTH_LONG).show();
         }
